@@ -10,7 +10,7 @@ function App() {
           <div className="flex justify-between items-center">
             <span className="text-white font-bold text-xl">Portfolio</span>
             <div className="flex gap-8 text-gray-300">
-              {['Home', 'About', 'Projects', 'Contact'].map((item) => (
+              {['Home', "Experience", 'Projects', "Technology"].map((item) => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors">{item}</a>
               ))}
             </div>
@@ -19,7 +19,7 @@ function App() {
       </nav>
 
       {/* Header/Hero Section */}
-      <header className="pt-32 pb-24 relative overflow-hidden">
+      <header className="pt-32 pb-24 relative overflow-hidden" id='home'>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-6xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient">
@@ -34,12 +34,8 @@ function App() {
                 <span>Manila, Philippines</span>
               </div>
               <div className="flex items-center gap-2 hover:text-purple-400 transition-colors">
-                <Phone size={16} />
-                <span>0927-507-9629</span>
-              </div>
-              <div className="flex items-center gap-2 hover:text-purple-400 transition-colors">
                 <Mail size={16} />
-                <span>johnruzell123@gmail.com</span>
+                <span>ruzelldev@gmail.com</span>
               </div>
             </div>
           </div>
@@ -47,7 +43,7 @@ function App() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-purple-500/10 to-transparent -z-10" />
       </header>
 
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16" id='home'>
         {/* Summary Section */}
         <section className="mb-24">
           <h2 className="text-3xl font-bold mb-8 text-white">Summary</h2>
@@ -60,9 +56,9 @@ function App() {
         </section>
 
         {/* Experience Section */}
-        <section className="mb-24">
+        <section className="mb-24" id='experience'>
           <h2 className="text-3xl font-bold mb-12 text-white">Experience</h2>
-          
+
           <div className="space-y-8 relative">
             {[
               {
@@ -110,24 +106,33 @@ function App() {
                     ))}
                   </ul>
                 </div>
-                {index < array.length - 1 && (
-                  <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-4 text-purple-400/50">
-                    <ArrowDownIcon size={24} className="animate-bounce" />
-                  </div>
-                )}
+              
               </div>
             ))}
           </div>
         </section>
 
         {/* Projects Section */}
-        <section className="mb-24">
+        <section className="mb-24" id='projects'>
           <h2 className="text-3xl font-bold mb-12 text-white">Personal Projects</h2>
-          
+
           <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
             <div className="flex justify-between items-start mb-6">
               <div>
-                <h3 className="text-2xl font-semibold text-white">LeadHive – Lead Management</h3>
+                <div className='mb-4'>
+                  <h3 className="text-2xl font-semibold text-white mb-2">
+                    LeadHive – Lead Management
+                  </h3>
+                  <a
+                    href="https://leadhive.pro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-indigo-300 underline  transition-colors duration-200"
+                  >
+                    Visit Lead Hive
+                  </a>
+
+                </div>
                 <p className="text-purple-400">Full Stack Project (Deployed on AWS EC2)</p>
               </div>
               <p className="text-gray-400">April 2025 – Present</p>
@@ -141,10 +146,10 @@ function App() {
               <li>Implemented JWT authentication for secure user logins and API access</li>
             </ul>
             <div className="text-gray-300">
-              <strong className="text-white">Stack:</strong> 
+              <strong className="text-white">Stack:</strong>
               <div className="flex flex-wrap gap-2 mt-2">
                 {[
-                  "PostgreSQL", "Next.js", "ShadCN", "React Query", "Express.js", "TypeScript", 
+                  "PostgreSQL", "Next.js", "ShadCN", "React Query", "Express.js", "TypeScript",
                   "EC2", "GitHub Actions", "Caddy", "AWS Route 53", "Namecheap", "Discord Webhooks", "JWT"
                 ].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-purple-500/10 rounded-full text-sm border border-purple-500/20">
@@ -157,7 +162,7 @@ function App() {
         </section>
 
         {/* Skills Section */}
-        <section>
+        <section id='technology'>
           <h2 className="text-3xl font-bold mb-12 text-white">Skills</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -173,7 +178,7 @@ function App() {
               },
               {
                 title: "Cloud & DevOps",
-                skills: ['AWS EC2', 'AWS S3', 'Route 53', 'CloudWatch', 'DigitalOcean', 'Nginx', 'Caddy'],
+                skills: ['AWS EC2', 'Route 53', 'DigitalOcean', 'Nginx', 'Caddy', "NameCheap"],
                 color: "blue"
               },
               {
@@ -201,13 +206,13 @@ function App() {
       <footer className="bg-black/20 backdrop-blur-sm text-gray-400 py-12 mt-24 border-t border-white/10">
         <div className="container mx-auto px-4">
           <div className="flex justify-center space-x-8">
-            <a href="https://github.com" className="hover:text-purple-400 transition-colors p-2">
+            <a href="https://github.com/Ruzell11" className="hover:text-purple-400 transition-colors p-2">
               <Github size={28} />
             </a>
-            <a href="https://linkedin.com" className="hover:text-purple-400 transition-colors p-2">
+            <a href="https://www.linkedin.com/in/john-ruzell-rivera-1026b0247/" className="hover:text-purple-400 transition-colors p-2">
               <Linkedin size={28} />
             </a>
-            <a href="mailto:johnruzell123@gmail.com" className="hover:text-purple-400 transition-colors p-2">
+            <a href="mailto:ruzelldev@gmail.com" className="hover:text-purple-400 transition-colors p-2">
               <Mail size={28} />
             </a>
           </div>
