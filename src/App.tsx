@@ -170,7 +170,7 @@ function App() {
               },
               {
                 title: "Frameworks & Libraries",
-                skills: ['Next.js', 'Laravel', 'FastAPI', 'React', 'Express.js', 'ShadCN', 'Tailwind', 'Bootstrap']
+                skills: ['Next.js', 'Laravel', 'FastAPI', 'React', 'Express.js', 'ShadCN', 'Tailwind', 'Bootstrap', 'AntD', 'Radix']
               },
               {
                 title: "Cloud & DevOps",
