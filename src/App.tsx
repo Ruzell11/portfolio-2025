@@ -9,7 +9,7 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <span className="text-white font-bold text-xl">Portfolio</span>
-            <div className="flex gap-8 text-gray-300">
+            <div className="hidden md:flex gap-8 text-gray-300">
               {['Home', "Experience", 'Projects', "Technology"].map((item) => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors">{item}</a>
               ))}
@@ -22,10 +22,10 @@ function App() {
       <header className="pt-32 pb-24 relative overflow-hidden" id='home'>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient">
               JOHN RUZELL RIVERA
             </h1>
-            <h2 className="text-2xl md:text-3xl mb-8 text-gray-300 font-light">
+            <h2 className="text-xl sm:text-2xl md:text-3xl mb-8 text-gray-300 font-light">
               Full Stack Developer | Software Developer | Web Developer
             </h2>
             <div className="flex flex-wrap gap-6 text-sm text-gray-400">
@@ -89,10 +89,10 @@ function App() {
                   "Developed and maintained an in-house application to streamline and automate the client loan application process"
                 ]
               }
-            ].map((job, index, array) => (
+            ].map((job, index) => (
               <div key={index} className="relative">
-                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
-                  <div className="flex justify-between items-start mb-4">
+                <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-4">
                     <div>
                       <h3 className="text-xl font-semibold text-white">{job.company}</h3>
                       <p className="text-purple-400">{job.role}</p>
@@ -106,7 +106,6 @@ function App() {
                     ))}
                   </ul>
                 </div>
-              
               </div>
             ))}
           </div>
@@ -116,8 +115,8 @@ function App() {
         <section className="mb-24" id='projects'>
           <h2 className="text-3xl font-bold mb-12 text-white">Personal Projects</h2>
 
-          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
-            <div className="flex justify-between items-start mb-6">
+          <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
               <div>
                 <div className='mb-4'>
                   <h3 className="text-2xl font-semibold text-white mb-2">
@@ -127,11 +126,10 @@ function App() {
                     href="https://leadhive.pro"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-indigo-300 underline  transition-colors duration-200"
+                    className="text-white hover:text-indigo-300 underline transition-colors duration-200"
                   >
                     Visit Lead Hive
                   </a>
-
                 </div>
                 <p className="text-purple-400">Full Stack Project (Deployed on AWS EC2)</p>
               </div>
@@ -168,26 +166,22 @@ function App() {
             {[
               {
                 title: "Programming Languages",
-                skills: ['Python', 'JavaScript', 'PHP', 'TypeScript'],
-                color: "purple"
+                skills: ['Python', 'JavaScript', 'PHP', 'TypeScript']
               },
               {
                 title: "Frameworks & Libraries",
-                skills: ['Next.js', 'Laravel', 'FastAPI', 'React', 'Express.js', 'ShadCN', 'Tailwind', 'Bootstrap'],
-                color: "pink"
+                skills: ['Next.js', 'Laravel', 'FastAPI', 'React', 'Express.js', 'ShadCN', 'Tailwind', 'Bootstrap']
               },
               {
                 title: "Cloud & DevOps",
-                skills: ['AWS EC2', 'Route 53', 'DigitalOcean', 'Nginx', 'Caddy', "NameCheap"],
-                color: "blue"
+                skills: ['AWS EC2', 'Route 53', 'DigitalOcean', 'Nginx', 'Caddy', "NameCheap"]
               },
               {
                 title: "Tools & Platforms",
-                skills: ['GitHub Actions', 'Jest', 'Pytest', 'Figma', 'BDD', 'Git', 'GitHub', 'Clickup', 'Jira'],
-                color: "red"
+                skills: ['GitHub Actions', 'Jest', 'Pytest', 'Figma', 'BDD', 'Git', 'GitHub', 'Clickup', 'Jira']
               }
             ].map((category, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
+              <div key={index} className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
                 <h3 className="font-semibold mb-6 text-white text-xl">{category.title}</h3>
                 <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill) => (
