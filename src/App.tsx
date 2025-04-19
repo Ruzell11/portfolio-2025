@@ -178,7 +178,7 @@ function App() {
               },
               {
                 title: "Tools & Platforms",
-                skills: ['GitHub Actions', 'Jest', 'Pytest', 'Figma', 'BDD', 'Git', 'GitHub', 'Clickup', 'Jira']
+                skills: ['GitHub Actions', 'Jest', 'Pytest', 'Figma', 'BDD', 'Git', 'GitHub', 'Clickup', 'Jira', 'Tanstack Query']
               }
             ].map((category, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
