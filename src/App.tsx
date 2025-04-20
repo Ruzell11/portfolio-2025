@@ -212,6 +212,14 @@ function App() {
                   </a>
                 </div>
                 <p className="text-purple-400">Full Stack Project (AWS EC2 Backend • Vercel Frontend)</p>
+                <div className="mt-4">
+    <p className="font-medium text-white">Credentials:</p>
+    <div className="bg-gray-100 p-4 rounded-md mt-2">
+      <p className="text-sm text-gray-700">Email: <span className="font-semibold text-blue-600">admin@example.com</span></p>
+      <p className="text-sm text-gray-700">Password: <span className="font-semibold text-red-600">defaultpassword</span></p>
+    </div>
+  </div>
+  
               </div>
               <p className="text-gray-400">December 2024</p>
             </div>
