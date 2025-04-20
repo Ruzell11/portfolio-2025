@@ -48,11 +48,9 @@ function App() {
         <section className="mb-24">
           <h2 className="text-3xl font-bold mb-8 text-white">Summary</h2>
           <p className="text-gray-300 leading-relaxed text-lg max-w-4xl">
-            Results-driven Full Stack Developer with expertise in Python, JavaScript, PHP, and TypeScript.
-            Experienced in building, maintaining, and optimizing scalable web and software applications.
-            Proficient in utilizing modern frameworks, tools, and technologies to enhance user experience
-            and drive business growth. Adept at collaborating with cross-functional teams to deliver high-quality solutions.
-          </p>
+  Versatile and results-driven Full Stack Developer with hands-on experience in building, deploying, and scaling modern web applications. Skilled in Python, JavaScript, PHP, and TypeScript, with a strong focus on performance, clean architecture, and user-first design. Passionate about leveraging modern frameworks and tools to create seamless user experiences and deliver real business value. Proven ability to collaborate with cross-functional teams and ship high-quality solutions in fast-paced environments.
+</p>
+
         </section>
 
         {/* Experience Section */}
@@ -112,8 +110,48 @@ function App() {
         </section>
 
         {/* Projects Section */}
-        <section className="mb-24" id='projects'>
+        <section className="mb-24 space-y-5" id='projects'>
           <h2 className="text-3xl font-bold mb-12 text-white">Personal Projects</h2>
+
+          <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+              <div>
+                <div className='mb-4'>
+                  <h3 className="text-2xl font-semibold text-white mb-2">
+                    My Portfolio – Built with Bolt.new + Custom Styling
+                  </h3>
+                  <a
+                    href="https://portfolio-2025-nine-coral.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-indigo-300 underline transition-colors duration-200"
+                  >
+                    Visit Portfolio
+                  </a>
+                </div>
+                <p className="text-purple-400">Showcase Project (AI-generated foundation, custom enhancements)</p>
+              </div>
+              <p className="text-gray-400">April 2025</p>
+            </div>
+            <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
+              <li>Created using <strong>Bolt.new</strong>, an AI-powered portfolio generator</li>
+              <li>Modified layout, content, and design to suit my personal brand and project needs</li>
+              <li>Optimized for clarity, responsiveness, and showcasing full-stack web apps</li>
+            </ul>
+            <div className="text-gray-300">
+              <strong className="text-white">Stack:</strong>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {[
+                  "Bolt.new", "React", "TailwindCSS", "Custom HTML/CSS", "Responsive Design", "GitHub Pages" // or Vercel etc.
+                ].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-purple-500/10 rounded-full text-sm border border-purple-500/20">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
 
           <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
@@ -133,7 +171,7 @@ function App() {
                 </div>
                 <p className="text-purple-400">Full Stack Project (Deployed on AWS EC2)</p>
               </div>
-              <p className="text-gray-400">April 2025 – Present</p>
+              <p className="text-gray-400">April 2025 – Present Ongoing</p>
             </div>
             <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
               <li>Designed and implemented a fully functional lead management web app from scratch with real-world CI/CD practices</li>
@@ -157,6 +195,49 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+              <div>
+                <div className='mb-4'>
+                  <h3 className="text-2xl font-semibold text-white mb-2">
+                    Scholarship System – Admin & Student Management
+                  </h3>
+                  <a
+                    href="https://scholarship-system-three.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-indigo-300 underline transition-colors duration-200"
+                  >
+                    Visit Scholarship System
+                  </a>
+                </div>
+                <p className="text-purple-400">Full Stack Project (AWS EC2 Backend • Vercel Frontend)</p>
+              </div>
+              <p className="text-gray-400">December 2024</p>
+            </div>
+            <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
+              <li>Developed a centralized web app for municipalities to manage scholarship applications with role-based access for admins and students</li>
+              <li>Admins can add, update, and delete student records, manage admin users, and update their profiles</li>
+              <li>Students can securely log in, view their application status in real time, and manage their profile info</li>
+              <li>Integrated application analytics dashboard — admins can view real-time stats on applicants by status (e.g., in progress, approved, rejected)</li>
+              <li>Backend built with Express.js, Prisma ORM, MySQL, and JWT-based authentication</li>
+              <li>Frontend deployed on Vercel; backend on AWS EC2 with Caddy reverse proxy and subdomain management via Namecheap</li>
+            </ul>
+            <div className="text-gray-300">
+              <strong className="text-white">Stack:</strong>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {[
+                  "MySQL", "Next.js", "ShadCN", "TanStack (React Query)", "Express.js", "TypeScript",
+                  "Prisma", "JWT", "TailwindCSS", "Vercel", "AWS EC2", "Caddy", "Namecheap"
+                ].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-purple-500/10 rounded-full text-sm border border-purple-500/20">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
         </section>
 
         {/* Skills Section */}
