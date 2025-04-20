@@ -171,7 +171,7 @@ function App() {
                 </div>
                 <p className="text-purple-400">Full Stack Project (Deployed on AWS EC2)</p>
               </div>
-              <p className="text-gray-400">April 2025 – Present Ongoing</p>
+              <p className="text-gray-400">April 2025 – Present</p>
             </div>
             <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
               <li>Designed and implemented a fully functional lead management web app from scratch with real-world CI/CD practices</li>
