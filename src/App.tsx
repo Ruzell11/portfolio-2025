@@ -161,7 +161,7 @@ function App() {
                     LeadHive – Lead Management
                   </h3>
                   <a
-                    href="https://leadhive.pro"
+                    href="https://lead-hive.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-indigo-300 underline transition-colors duration-200"
