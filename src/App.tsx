@@ -48,8 +48,8 @@ function App() {
         <section className="mb-24">
           <h2 className="text-3xl font-bold mb-8 text-white">Summary</h2>
           <p className="text-gray-300 leading-relaxed text-lg max-w-4xl">
-  Versatile and results-driven Full Stack Developer with hands-on experience in building, deploying, and scaling modern web applications. Skilled in Python, JavaScript, PHP, and TypeScript, with a strong focus on performance, clean architecture, and user-first design. Passionate about leveraging modern frameworks and tools to create seamless user experiences and deliver real business value. Proven ability to collaborate with cross-functional teams and ship high-quality solutions in fast-paced environments.
-</p>
+            Versatile and results-driven Full Stack Developer with hands-on experience in building, deploying, and scaling modern web applications. Skilled in Python, JavaScript, PHP, and TypeScript, with a strong focus on performance, clean architecture, and user-first design. Passionate about leveraging modern frameworks and tools to create seamless user experiences and deliver real business value. Proven ability to collaborate with cross-functional teams and ship high-quality solutions in fast-paced environments.
+          </p>
 
         </section>
 
@@ -157,9 +157,14 @@ function App() {
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
               <div>
                 <div className='mb-4'>
+                  <div>
                   <h3 className="text-2xl font-semibold text-white mb-2">
                     LeadHive – Lead Management
                   </h3>
+                  <p className="inline-block text-sm px-3 py-1 bg-yellow-600/20 text-yellow-300 border border-yellow-600/40 rounded-full mb-4">
+                  🚧 Currently Under 
+                  </p>
+                  </div>
                   <a
                     href="https://lead-hive.vercel.app/"
                     target="_blank"
@@ -213,13 +218,13 @@ function App() {
                 </div>
                 <p className="text-purple-400">Full Stack Project (AWS EC2 Backend • Vercel Frontend)</p>
                 <div className="mt-4">
-    <p className="font-medium text-white">Credentials:</p>
-    <div className="bg-gray-100 p-4 rounded-md mt-2">
-      <p className="text-sm text-gray-700">Email: <span className="font-semibold text-blue-600">admin@example.com</span></p>
-      <p className="text-sm text-gray-700">Password: <span className="font-semibold text-red-600">defaultpassword</span></p>
-    </div>
-  </div>
-  
+                  <p className="font-medium text-white">Credentials:</p>
+                  <div className="bg-gray-100 p-4 rounded-md mt-2">
+                    <p className="text-sm text-gray-700">Email: <span className="font-semibold text-blue-600">admin@example.com</span></p>
+                    <p className="text-sm text-gray-700">Password: <span className="font-semibold text-red-600">defaultpassword</span></p>
+                  </div>
+                </div>
+
               </div>
               <p className="text-gray-400">December 2024</p>
             </div>
@@ -237,6 +242,61 @@ function App() {
                 {[
                   "MySQL", "Next.js", "ShadCN", "TanStack (React Query)", "Express.js", "TypeScript",
                   "Prisma", "JWT", "TailwindCSS", "Vercel", "AWS EC2", "Caddy", "Namecheap"
+                ].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-purple-500/10 rounded-full text-sm border border-purple-500/20">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+              <div>
+                <div className='mb-4'>
+                  <div>
+                  <h3 className="text-2xl font-semibold text-white mb-2">
+                    Inventory System – Role-Based Product & Team Management 
+                  </h3>
+                  <span className="inline-block text-sm px-3 py-1 bg-yellow-600/20 text-yellow-300 border border-yellow-600/40 rounded-full mb-4">
+                  🚧 Currently Under Construction Rebuilding the Frontend
+                  </span>
+                  </div>
+                  <a
+                    href="https://inventory-client-ebon.vercel.app/" // Replace with actual URL
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-indigo-300 underline transition-colors duration-200"
+                  >
+                    Visit Inventory App
+                  </a>
+                  
+                </div>
+                <p className="text-purple-400">Full Stack Project (RBAC + Team & Product Management)</p>
+                <div className="mt-4">
+                  <p className="font-medium text-white">Credentials: Admin</p>
+                  <div className="bg-gray-100 p-4 rounded-md mt-2">
+                    <p className="text-sm text-gray-700">Email: <span className="font-semibold text-blue-600">ruzell@gmail.com</span></p>
+                    <p className="text-sm text-gray-700">Password: <span className="font-semibold text-red-600">password</span></p>
+                  </div>
+                  </div>
+              </div>
+              <p className="text-gray-400">March 2023</p>
+            </div>
+            <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
+              <li>Designed for managing inventory and team access with strict role-based permissions</li>
+              <li><strong>Super Admin:</strong> Can manage admins and view only their created team members (but can't manage products)</li>
+              <li><strong>Admin:</strong> Can manage products (name, price, description, image), but not team members</li>
+              <li>Secure login and access control tailored to each user role using Zod + JWT</li>
+              <li>Built-in image upload system for product management</li>
+              <li>Fully integrated MongoDB with cursor-based pagination for handling large product listings</li>
+            </ul>
+            <div className="text-gray-300">
+              <strong className="text-white">Stack:</strong>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {[
+                  "MongoDB", "Express.js", "Next.js", "React", "Zod", "JWT", "TailwindCSS", "TypeScript", "Cursor AI", "Cloudinary"
                 ].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-purple-500/10 rounded-full text-sm border border-purple-500/20">
                     {tech}
