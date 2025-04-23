@@ -162,7 +162,7 @@ function App() {
                     LeadHive – Lead Management
                   </h3>
                   <p className="inline-block text-sm px-3 py-1 bg-yellow-600/20 text-yellow-300 border border-yellow-600/40 rounded-full mb-4">
-                  🚧 Currently Under 
+                  🚧 Currently Under Construction
                   </p>
                   </div>
                   <a
